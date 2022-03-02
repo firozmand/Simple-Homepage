@@ -13,10 +13,10 @@
 
 
 
-    <header class="flex  flex-wrap  w-screen h-screen bg-cover  bg-homebg  overflow-hidden ">
-
+    <header class="flex  flex-wrap   w-screen h-screen bg-cover bg-center center bg-homebg  overflow-hidden ">
+<div class=" flex flex-col  w-full justify-start items-center">
         <!-- start nav -->
-        <div class="navbar  hidden   flex-wrap   lg:flex  justify-around  h-16 w-full">
+        <div class="navbar  hidden   flex-wrap   lg:flex  justify-around   w-full">
 
             <div class="navbar-center ">
                 <label for="brand name" class="text-2xl mr-10 font-bold">Brand name</label>
@@ -33,7 +33,6 @@
                     <li><a>contact</a></li>
                 </ul>
             </div>
-
             <div class="navbar-end ">
                 <button class="btn btn-ghost">log in</button>
                 <button class="btn btn-primary ml-1 bg-blue-500 hover:bg-transparent border-0">join us <svg xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +45,7 @@
         </div>
 
         <!--            tablet  -->
-        <div class="h-screen drawer w-full  rounded lg:hidden  ">
+        <div class="h-screen drawer w-full  rounded lg:hidden   ">
             <div class="h-screen drawer w-full ">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
                 <div class="flex flex-col drawer-content">
@@ -74,13 +73,15 @@
                         <div class="flex-none hidden lg:block">
                             <ul class="menu menu-horizontal">
                                 <!-- Navbar menu content here -->
-                                <li><a>Navbar Item 1</a></li>
-                                <li><a>Navbar Item 2</a></li>
+                                <li><a>Home</a></li>
+                                <li><a>Product</a></li>
+                                <li><a>Pricing</a></li>
+                                <li><a>Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <!-- Page content here -->
-                    <div class="flex w-screen h-screen   flex-col items-center justify-center  ">
+                    <div class="flex w-screen   flex-col items-center justify-center   ">
                         <div class="flex flex-col w-4/6 justify-around text-center py-5 ">
                             <p class="font-medium text-lg pt-16 text-blue-500 mx-10 mb-5">welcome</p>
                             <h1 class="font-bold text-5xl">Selling on the internet like a
@@ -101,20 +102,20 @@
                     <label for="my-drawer-3" class="drawer-overlay"></label>
                     <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
                         <!-- Sidebar content here -->
-                        <li><a>Sidebar Item 1</a></li>
-                        <li><a>Sidebar Item 2</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>Product</a></li>
+                        <li><a>Pricing</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--  end  tablet  -->
-
         <!-- end nav -->
 
 
-
-        <!-- duc txt -->
-        <div class="flex  w-full h-screen flex-col items-center justify-center ">
+        <!-- out duc txt -->
+        <div class="flex  w-full  flex-col items-center justify-center pt-40 ">
             <div class="w-1/3 text-center">
                 <p class="font-medium text-lg text-blue-500 mb-5">welcome</p>
                 <h1 class="font-bold text-5xl">Selling on the <span class=" m-2 mb-5 inline-block"> internet like a
@@ -127,27 +128,26 @@
                 <button class="btn  btn-outline  border-2  border-blue-500 text-xs font-bold">Lesrn More</button>
             </div>
         </div>
-
-
-
         </div>
         </div>
+    </div>
         <!-- end duc txt -->
     </header>
 
 
     
-    <!-- cart + duc-->
-    <section class="flex flex-col md:flex-wrap justify-around items-center   h-screen w-screen  overflow-hidden ">
-
-        <div class="flex flex-col justify-center md:items-start items-center md:w-1/4 w-4/5 h-1/2   text-center ">
+    <!--Section 1 cart + duc-->
+    <section class="flex  flex-col  md:flex-wrap md:flex-row     justify-around items-center   mb-20   w-screen   ">
+    <!--duc-->
+        <div class="flex flex-col justify-center md:items-start items-center md:w-1/4 w-4/5    text-center ">
+            
             <img src="src/fixed-width fixed-height.png" class="md:w-1/6  w-1/4  mt-1 " alt="redline">
             <h1 class=" font-bold text-3xl md:mb-10 mb-5  md:mt-0 text-gray-800 text-center md:text-left ">Whatch
                 our courses</h1>
             <p class="text-gray-800  md:w-full  text-center md:text-left">Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit. Cumque, deserunt
                 dignissimos, accusamusnesciunt perspiciatis, quidem saepe rem esse mollitia beatae dolores </p>
-            <div class="flex justify-center  items-end   lg:mt-24 text-blue-500"> Learn More <svg
+            <div class="flex justify-center  items-end   lg:mt-24 mb-5 text-blue-500"> Learn More <svg
                     xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -157,10 +157,12 @@
 
             
         </div>
+    <!--duc-->
+    
+        <div class="flex md:flex-wrap flex-wrap justify-center items-center   md:w-2/5    ">
+            <div class=" flex flex-col justify-center items-center  min-w-5/6 w-1/2">
 
-        <div class="flex md:flex-col flex-wrap justify-center items-left h-2/3 md:w-2/5 md:h-4/5   ">
-
-            <div class=" w-2/5 md:w-2/5 h-2/5 bg-white shadow-xl m-1 rounded-md flex flex-col justify-center items-start p-5"> 
+            <div class="w-4/5 bg-white shadow-xl m-1 rounded-md flex flex-col justify-center items-start p-5"> 
                  <div class=" md:pb-3"> <svg xmlns="http://www.w3.org/2000/svg"
                         class="md:h-20 h-12  w-18 md:p-4 rounded-lg text-blue-400 bg-blue-100 " viewBox="0 0 20 20"
                         fill="currentColor">
@@ -175,7 +177,8 @@
                     <div class="justify-start card-actions">
                 </div>
             </div>
-            <div class=" w-2/5 md:w-2/5 h-2/5 bg-white shadow-xl m-1 rounded-md flex flex-col justify-center items-start p-5"> 
+
+            <div class="w-4/5 bg-white shadow-xl m-1 rounded-md flex flex-col justify-center items-start p-5"> 
 
 
                 <div class=" md:pb-3 "> <svg xmlns="http://www.w3.org/2000/svg"
@@ -195,23 +198,26 @@
 
 
             </div>
-            <div class=" w-2/5 md:w-2/5 h-2/5 bg-white shadow-xl m-1 rounded-md flex flex-col justify-center items-start p-5"> 
+           </div>
+            <div class=" flex flex-col w-1/2 min-w-5/6">
+                <div class=" w-4/5 bg-white shadow-xl m-1 rounded-md flex flex-col justify-center items-start p-5"> 
 
-              
-
-                 <div class=" md:pb-3"> <svg xmlns="http://www.w3.org/2000/svg"   class="md:h-20 h-12  w-18 md:p-4 rounded-lg text-red-400 bg-red-100 " viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                  </svg>
+                    <div class=" md:pb-3 "> <svg xmlns="http://www.w3.org/2000/svg"
+                        class="md:h-20 h-12  w-18 md:p-4 rounded-lg  text-red-400 bg-red-200 "
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd" />
+                    </svg>
                 </div>
-                <h2 class="card-title text-black text-sm md:text-lg md:pb-5">Market Analysis</h2>
-                <img src="src/fixed-width fixed-height.png" class="md:w-1/3 w-1/4 mt-1" alt="redline">
-                <p class="text-gray-700 pt-2">The gradual 
-                    accumulation of 
-                    information about </p>
-                <div class="justify-start card-actions">
+                    <h2 class="card-title text-black text-sm md:text-lg md:pb-5">Books Liberary</h2>
+                    <img src="src/fixed-width fixed-height.png" class="md:w-1/3 w-1/4 mt-1" alt="redline">
+                    <p class="text-gray-700 pt-2">The gradual 
+                        accumulation of 
+                        information about </p>
+                    <div class="justify-start card-actions">
+                    </div>
+    
+    
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -220,18 +226,18 @@
 
 
 
-    <!-- pic + duc-->
+    <!-- Section 2 pic + duc-->
     
-    <section class="flex flex-wrap  h-screen w-screen  overflow-hidden justify-center items-center">
-        <div class="flex flex-col  md:w-1/4 h-2/5 m-5 md:hidden  ">
-            <div class="flex justify-start items-start bg-redline h-3 mr-10 w-1/5 mb-7"></div>
-            <h1 class=" font-bold text-4xl mb-10 text-gray-800 ">Make online
+    <section class="flex flex-wrap  my-30 mb-64 w-screen   justify-center items-center">
+        <div class="flex flex-col  md:w-1/4 justify-center  items-center  m-5 md:hidden  ">
+            <img src="src/fixed-width fixed-height.png" class="md:w-1/6  w-1/4   " alt="redline">
+            <h1 class=" font-bold text-4xl  mb-10 text-gray-800 text-center ">Make online
                 education</h1>
-            <p class="text-gray-800">Problems trying to resolve the conflict between
+            <p class="text-gray-800 text-center w-1/2">Problems trying to resolve the conflict between
                 the two major realms of Classical physics:
                 Newtonian mechanics </p>
-            <div class="flex justify-start items-end mt-24 text-blue-500">Learn More <svg
-                    xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <div class="flex justify-start items-end  text-blue-500">Learn More <svg
+                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd"
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                         clip-rule="evenodd" />
@@ -243,8 +249,9 @@
             <img src="src/persen.png " class="h-screen w-screen" alt="">
 
         </div>
-        <div class="hidden  md:flex flex-col  md:w-1/4 h-2/5 m-5  ">
-            <div class="flex justify-start items-start bg-redline h-3 mr-10 w-1/5 mb-7"></div>
+        <div class="hidden  md:flex flex-col  md:w-1/4  m-5  ">
+            <img src="src/fixed-width fixed-height.png" class="md:w-1/6  w-1/4 pt-32 mt-1 " alt="redline">
+
             <h1 class=" font-bold text-4xl mb-10 text-gray-800 ">Make online
                 education</h1>
             <p class="text-gray-800">Problems trying to resolve the conflict between
@@ -265,21 +272,21 @@
 
 
 
-    <!-- cards -->
-    <section class="flex flex-col  h-screen w-screen  overflow-hidden justify-center items-center  ">
-
-        <div class="w-3/4 h-32  mb-16  ">
+    <!-- Sectiom 3 cards -->
+    <section class=" hidden lg:flex flex-col w-screen   justify-center items-center  ">
+<!--card txt-->
+        <div class="w-3/4   mb-16  ">
             <a href="#" class="text-blue-500 font-bold text-sm">Practice Advice </a>
             <h1 class="text-3xl font-bold text-black">Watch our Courses</h1>
             <p class="text-slate-600 w-1/3 mt-5">Problems trying to resolve the conflict between
                 the two major realms of Classical physics: Newtonian mechanics
             </p>
         </div>
+<!--end card txt-->
 
-        <div class="flex flex-row items-center justify-center ">
+        <div class="flex flex-row items-center justify-center   ">
             <!--cart-->
-            <div
-                class="card flex items-center justify-center flex-wrap w-80  card-compact mr-5 shadow-xl bg-white  rounded-none">
+            <div class="card flex items-center justify-center flex-wrap w-80  card-compact mr-5 shadow-xl bg-white  rounded-none">
                 <figure>
                     <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes">
                     <div class="flex flex-wrap absolute  top-36  ">
@@ -290,10 +297,10 @@
                     <div class="badge badge-error  rounded-sm text-white px-5 absolute left-2 top-2 p-3">Sale</div>
                 </figure>
 
-                <div class="card-body">
+                <div class="card-body carousel ">
                     <P class="text-blue-500 text-xs inline-block  ">English Departement
                     <div class="absolute right-2">
-                        <div class=" bg-gray-500 w-16 h-6 flex flex-row justify-center items-center rounded-2xl">
+                        <div class=" bg-gray-500 w-16 flex flex-row justify-center items-center rounded-2xl">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 inline-block text-orange-400"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -346,7 +353,7 @@
                     </div>
                     <button
                         class="btn btn-outline border-blue-500 text-blue-500 rounded-3xl text-center text-xm capitalize mt-5 w-3/5 py-0 px-10  font-normal">Learn
-                        More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pl-2" viewBox="0 0 20 20"
+                        More <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 pl-2" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -354,12 +361,8 @@
                         </svg></button>
                 </div>
             </div>
-            <!-- end cart-->
 
-
-            <!--cart-->
-            <div
-                class="card flex items-center justify-center flex-wrap w-80  card-compact mr-5 shadow-xl bg-white  rounded-none">
+            <div class="card flex items-center justify-center flex-wrap w-80  card-compact mr-5 shadow-xl bg-white  rounded-none">
                 <figure>
                     <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes">
                     <div class="flex flex-wrap absolute  top-36  ">
@@ -370,10 +373,10 @@
                     <div class="badge badge-error  rounded-sm text-white px-5 absolute left-2 top-2 p-3">Sale</div>
                 </figure>
 
-                <div class="card-body">
+                <div class="card-body carousel ">
                     <P class="text-blue-500 text-xs inline-block  ">English Departement
                     <div class="absolute right-2">
-                        <div class=" bg-gray-500 w-16 h-6 flex flex-row justify-center items-center rounded-2xl">
+                        <div class=" bg-gray-500 w-16 flex flex-row justify-center items-center rounded-2xl">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 inline-block text-orange-400"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -426,7 +429,7 @@
                     </div>
                     <button
                         class="btn btn-outline border-blue-500 text-blue-500 rounded-3xl text-center text-xm capitalize mt-5 w-3/5 py-0 px-10  font-normal">Learn
-                        More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pl-2" viewBox="0 0 20 20"
+                        More <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 pl-2" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -434,12 +437,8 @@
                         </svg></button>
                 </div>
             </div>
-            <!-- end cart-->
 
-
-            <!--cart-->
-            <div
-                class="card flex items-center justify-center flex-wrap w-80  card-compact mr-5 shadow-xl bg-white  rounded-none">
+            <div class="card flex items-center justify-center flex-wrap w-80  card-compact mr-5 shadow-xl bg-white  rounded-none">
                 <figure>
                     <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes">
                     <div class="flex flex-wrap absolute  top-36  ">
@@ -450,10 +449,10 @@
                     <div class="badge badge-error  rounded-sm text-white px-5 absolute left-2 top-2 p-3">Sale</div>
                 </figure>
 
-                <div class="card-body">
+                <div class="card-body carousel ">
                     <P class="text-blue-500 text-xs inline-block  ">English Departement
                     <div class="absolute right-2">
-                        <div class=" bg-gray-500 w-16 h-6 flex flex-row justify-center items-center rounded-2xl">
+                        <div class=" bg-gray-500 w-16 flex flex-row justify-center items-center rounded-2xl">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 inline-block text-orange-400"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -506,7 +505,7 @@
                     </div>
                     <button
                         class="btn btn-outline border-blue-500 text-blue-500 rounded-3xl text-center text-xm capitalize mt-5 w-3/5 py-0 px-10  font-normal">Learn
-                        More <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pl-2" viewBox="0 0 20 20"
+                        More <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 pl-2" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -518,26 +517,285 @@
 
         </div>
     </section>
+
+    <section class=" flex lg:hidden flex-col w-screen   justify-center items-center  ">
+        <!--card txt-->
+                <div class="w-1/2   mb-16 text-center flex flex-col   ">
+                    <a href="#" class="text-blue-500 font-bold text-sm ">Practice Advice </a>
+                    <h1 class="text-3xl font-bold text-black text-center ">Watch our Courses</h1>
+                    <p class="text-slate-600 w-full mt-5">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics
+                    </p>
+                </div>
+        <!--end card txt-->
+        <div class="flex flex-row w-screen  justify-around items-center ">
+            <div class=" text-8xl text-gray-600"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+              </svg></div>    
+
+        <div class=" w-96 flex flex-row justify-center items-center carousel  ">
+            <div class="flex flex-row w-full items-center">
+            <div class="w-full justify-center carousel-item">
+                <div class="card flex items-center justify-center flex-wrap w-96 card-compact  shadow-sm bg-white  rounded-none">
+                    <figure>
+                        <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes">
+                        <div class="flex flex-wrap absolute  top-36  ">
+                            <img class="w-7 h-7 mr-3" src="./src/basket.png" alt="basket">
+                            <img class="w-7 h-7 mr-3" src="./src/ease.png" alt="ease">
+                            <img class="w-7 h-7 mr-3" src="./src/like.png" alt="like">
+                        </div>
+                        <div class="badge badge-error  rounded-sm text-white px-5 absolute left-2 top-2 p-3">Sale</div>
+                    </figure>
+    
+                    <div class="card-body carousel ">
+                        <P class="text-blue-500 text-xs inline-block  ">English Departement
+                        <div class="absolute right-2">
+                            <div class=" bg-gray-500 w-16 flex flex-row justify-center items-center rounded-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 inline-block text-orange-400"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="inline-block"> 4.1 </span>
+                            </div>
+                        </div>
+                        </P>
+                        <h2 class="card-title text-black ">Graphic Design</h2>
+                        <p class="text-gray-400 tracking-wide">We It's only a
+                            keystroke away focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.</p>
+                        <div class=" text-left text-sm inline-block text-gray-500 font-bold py-3"> <svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg> 15 Sales</div>
+                        <h1 class="text-gray-400 font-bold inline-block pr-3">$16.48 <span
+                                class="text-green-600 font-bold">$6.48</span></h1>
+                        <div class=" flex flex-row justify-start card-actions mt-5">
+    
+                            <p class="inline-block text-gray-600 text-"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline-block text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> 22hr 30min </span>
+                            </p>
+    
+                            <p class="inline-block text-gray-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline text-red-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> 64 Lessons</span>
+                            </p>
+    
+                            <p class="inline-block text-gray-600 "><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline-block text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> Progress </span>
+                            </p>
+    
+    
+                        </div>
+                        <button
+                            class="btn btn-outline border-blue-500 text-blue-500 rounded-3xl text-center text-xm capitalize mt-5 w-3/5 py-0 px-10  font-normal">Learn
+                            More <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 pl-2" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg></button>
+                    </div>
+                </div>            </div> 
+            <div class="w-full  justify-center carousel-item">
+                <div class="card flex items-center justify-center flex-wrap w-96  card-compact  shadow-sm bg-white  rounded-none">
+                    <figure>
+                        <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes">
+                        <div class="flex flex-wrap absolute  top-36  ">
+                            <img class="w-7 h-7 mr-3" src="./src/basket.png" alt="basket">
+                            <img class="w-7 h-7 mr-3" src="./src/ease.png" alt="ease">
+                            <img class="w-7 h-7 mr-3" src="./src/like.png" alt="like">
+                        </div>
+                        <div class="badge badge-error  rounded-sm text-white px-5 absolute left-2 top-2 p-3">Sale</div>
+                    </figure>
+    
+                    <div class="card-body carousel ">
+                        <P class="text-blue-500 text-xs inline-block  ">English Departement
+                        <div class="absolute right-2">
+                            <div class=" bg-gray-500 w-16 flex flex-row justify-center items-center rounded-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 inline-block text-orange-400"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="inline-block"> 4.1 </span>
+                            </div>
+                        </div>
+                        </P>
+                        <h2 class="card-title text-black ">Graphic Design</h2>
+                        <p class="text-gray-400 tracking-wide">We It's only a
+                            keystroke away focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.</p>
+                        <div class=" text-left text-sm inline-block text-gray-500 font-bold py-3"> <svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg> 15 Sales</div>
+                        <h1 class="text-gray-400 font-bold inline-block pr-3">$16.48 <span
+                                class="text-green-600 font-bold">$6.48</span></h1>
+                        <div class=" flex flex-row justify-start card-actions mt-5">
+    
+                            <p class="inline-block text-gray-600 text-"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline-block text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> 22hr 30min </span>
+                            </p>
+    
+                            <p class="inline-block text-gray-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline text-red-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> 64 Lessons</span>
+                            </p>
+    
+                            <p class="inline-block text-gray-600 "><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline-block text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> Progress </span>
+                            </p>
+    
+    
+                        </div>
+                        <button
+                            class="btn btn-outline border-blue-500 text-blue-500 rounded-3xl text-center text-xm capitalize mt-5 w-3/5 py-0 px-10  font-normal">Learn
+                            More <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 pl-2" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg></button>
+                    </div>
+                </div>            </div> 
+            <div class="w-full  justify-center carousel-item">
+                <div class="card flex items-center justify-center flex-wrap w-96  card-compact  shadow-sm bg-white  rounded-none">
+                    <figure>
+                        <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes">
+                        <div class="flex flex-wrap absolute  top-36  ">
+                            <img class="w-7 h-7 mr-3" src="./src/basket.png" alt="basket">
+                            <img class="w-7 h-7 mr-3" src="./src/ease.png" alt="ease">
+                            <img class="w-7 h-7 mr-3" src="./src/like.png" alt="like">
+                        </div>
+                        <div class="badge badge-error  rounded-sm text-white px-5 absolute left-2 top-2 p-3">Sale</div>
+                    </figure>
+    
+                    <div class="card-body carousel ">
+                        <P class="text-blue-500 text-xs inline-block  ">English Departement
+                        <div class="absolute right-2">
+                            <div class=" bg-gray-500 w-16 flex flex-row justify-center items-center rounded-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1 inline-block text-orange-400"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <span class="inline-block"> 4.1 </span>
+                            </div>
+                        </div>
+                        </P>
+                        <h2 class="card-title text-black ">Graphic Design</h2>
+                        <p class="text-gray-400 tracking-wide">We It's only a
+                            keystroke away focus on ergonomics and meeting
+                            you where you work. It's only a
+                            keystroke away.</p>
+                        <div class=" text-left text-sm inline-block text-gray-500 font-bold py-3"> <svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg> 15 Sales</div>
+                        <h1 class="text-gray-400 font-bold inline-block pr-3">$16.48 <span
+                                class="text-green-600 font-bold">$6.48</span></h1>
+                        <div class=" flex flex-row justify-start card-actions mt-5">
+    
+                            <p class="inline-block text-gray-600 text-"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline-block text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> 22hr 30min </span>
+                            </p>
+    
+                            <p class="inline-block text-gray-600"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline text-red-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> 64 Lessons</span>
+                            </p>
+    
+                            <p class="inline-block text-gray-600 "><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-3 w-3 inline-block text-green-600" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg><span class="text-xs text-gray-600"> Progress </span>
+                            </p>
+    
+    
+                        </div>
+                        <button
+                            class="btn btn-outline border-blue-500 text-blue-500 rounded-3xl text-center text-xm capitalize mt-5 w-3/5 py-0 px-10  font-normal">Learn
+                            More <svg xmlns="http://www.w3.org/2000/svg" class=" w-5 pl-2" viewBox="0 0 20 20"
+                                fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd" />
+                            </svg></button>
+                    </div>
+                </div>            </div> 
+                
+                
+            </div>
+          </div>
+
+          
+          <div class=" text-8xl text-gray-600"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </div>
+
+            </section>
     <!-- End cards -->
 
 
 
-    <!-- star cart + txt-->
+    <!-- Section 4 star cart + txt-->
 
-    <section class="flex flex-col   h-screen w-screen  overflow-hidden justify-center items-center  ">
+    <section class="flex flex-col   mt-40 w-screen  overflow-hidden justify-center items-center  ">
         <!-- txt-->
-        <div class="w-3/4 h-32  mb-28    ">
+        <div class="w-3/4   mb-28    ">
             <a href="#" class="text-blue-500 font-bold text-sm">Practice Advice </a>
             <h1 class="text-3xl font-bold text-black">Each and every client is important.</h1>
-            <p class="text-slate-600 w-1/3 mt-5">Problems trying to resolve the conflict between
+            <p class="text-slate-600  md:w-1/3 md:mt-5">Problems trying to resolve the conflict between
                 the two major realms of Classical physics: Newtonian mechanics
             </p>
         </div>
         <!--End txt-->
         <!-- card -->
-        <div class=" w-3/4  h-2/5  flex flex-wrap justify-around ">
+        <div class=" w-full mb-16 flex  flex-wrap items-start justify-around ">
 
-            <div class="w-1/4  h-full flex flex-col justify-center items-center">
+            <div class="w-96 flex shadow-lg p-5 md:shadow-none flex-col justify-center items-center mb-14 mx-14">
                 <div class="rating py-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked>
@@ -568,7 +826,7 @@
 
             </div>
 
-            <div class="w-1/4  h-full flex flex-col justify-center items-center">
+            <div class="w-96  flex shadow-lg p-5 md:shadow-none flex-col justify-center items-center mb-14 mx-14">
                 <div class="rating py-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked>
@@ -599,7 +857,7 @@
 
             </div>
 
-            <div class="w-1/4  h-full flex flex-col justify-center items-center">
+            <div class="w-96  flex shadow-lg p-5 md:shadow-none flex-col justify-center items-center mb-14 mx-14">
                 <div class="rating py-5">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked>
@@ -641,19 +899,19 @@
 
     <!-- start Footer-->
 
-    <footer class="flex flex-col  h-screen w-screen  overflow-hidden justify-center items-center  ">
+    <footer class="flex flex-col   w-screen  overflow-hidden justify-center items-center  ">
 
         <!-- start part1 Footer-->
 
-        <div class="hero  h-1/2 bg-[#252B42]">
-            <div class="text-center hero-content">
-                <div class="max-w-md">
+        <div class="hero  flex flex-col w-screen bg-[#252B42]">
+            <div class="text-center hero-content flex flex-col justify-center items-center ">
+                <div class="max-w-md ">
                     <p class="text-blue-600 font-bold text-xs p-5">Practice Advice</p>
                     <h1 class="text-4xl pb-5 font-bold">JOIN US</h1>
-                    <p class="pb-12 text-2xs">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                    <p class="pb-12 px-10 text-2xs">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
                         excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <div class="form-control pb-10">
-                        <div class="input-group justify-center ">
+                    <div class="form-control w-full px-10 pb-10">
+                        <div class="input-group justify-center  ">
                             <input type="text" placeholder="Search…"
                                 class="input text-black bg-white input-bordered w-screen">
                             <button class="btn btn-group bg-blue-500  ">
@@ -667,7 +925,7 @@
         <!-- end part1 Footer-->
 
         <!-- start part 2 Footer-->
-        <footer class="p-10 h-1/2 footer text-gray-800 bg-white flex flex-wrap justify-around items-center">
+        <footer class="p-10 footer text-gray-800 bg-white flex flex-wrap justify-around items-center">
             <div class="w-28    ">
                 <span class="footer-title opacity-100 text-black">Get In Touch</span>
                 <a class="link link-hover">the quick fox jumps over thelazy dog</a>
