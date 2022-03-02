@@ -11,6 +11,7 @@ module.exports = {
         'ease': "url('./src/ease.png')",
         'person': "url('./src/persen.png')",
         'like': "url('./src/like.png')",
+        'creditcart': "url('./src/creditcart.png')",
       }
     },
   },
